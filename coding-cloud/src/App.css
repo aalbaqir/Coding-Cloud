@@ -1,0 +1,145 @@
+body{
+  background-color:#66D0FF;
+}
+.cloud{ 
+   margin-top:7px;
+   width:350px;
+   height:120px;
+   background:#fff12c;
+   box-shadow: 10px 10px rgba(0,0,0,0.2);
+   border-radius:100px;
+   position: absolute;
+   top: 35%;
+   left: 15%;
+   /* transform: translate(-50%, -50%); */
+   animation: zoomies 29s infinite linear;
+}
+
+
+.cloud.one{
+  margin-top:9px;
+  margin-right: 10px;
+  width:350px;
+  height:120px;
+  background:#ff3232;
+  box-shadow: 10px 10px rgba(0,0,0,0.2);
+  border-radius:100px;
+  position: absolute;
+  top: 2%;
+  left: 49%;
+  /* transform: translate(35%, 0%); */
+  animation: zoomies 25s infinite linear;
+
+
+}
+
+.cloud.two{
+  margin-top:15px;
+  width:350px;
+  height:120px;
+  background:#97fa70;
+  box-shadow: 10px 10px rgba(0,0,0,0.2);
+  border-radius:100px;
+  position: absolute;
+  top: 17%;
+  left: 70%;
+  /* transform: translate(-30%, -10%); */
+  animation: zoomies 35s infinite linear;
+
+
+}
+
+.cloud.three{
+  margin-top:120px;
+  width:350px;
+  height:120px;
+  background:#ffa7df;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.37);
+  border-radius:100px;
+  position: absolute;
+  top: 55%;
+  left: 39%;
+  /* transform: translate(-5%, -100%); */
+  animation: zoomies 32s infinite linear;
+
+
+}
+
+.cloud.four{
+  margin-top:10px;
+  width:350px;
+  height:120px;
+  background:#b264ff;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.37);
+  border-radius:100px;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  /* transform: translate(-20%, 100%); */
+  animation: zoomies 30s infinite linear;
+
+
+}
+
+.cloud.five{
+  margin-top:25px;
+  width:350px;
+  height:120px;
+  background:#2307be;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.37);
+  border-radius:100px;
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  transform: translate(-50%, 100%);
+  animation: zoomies 30s infinite linear;
+
+
+}
+
+
+.cloud::after, .cloud::before{
+    content:"";
+    position:relative;
+    display:inline-block;
+    background:inherit;
+    border-radius:inherit;
+}
+
+
+.cloud::after{
+  width:100px;
+  height:100px;
+  top:-130px;
+  left:-95px;
+}
+.cloud::before{
+    width:180px;
+    height:180px;
+    top: -70px;
+    left:130px;
+}
+
+@keyframes zoomies{
+  from{
+    left: 0%;
+    transform:translateX(-100%);
+  }
+   to{
+     left: 100%;
+     transform: translateX(0%);
+   }
+}
+
+marquee{
+  position: absolute;
+  top: 45%;
+  /* background-color: red; */
+  background-color: rgba(232, 255, 254, 0.521);
+  font-size: 100px;
+  padding: 5px;
+  padding-right: 100%;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:rgb(25, 129, 185);
+}
